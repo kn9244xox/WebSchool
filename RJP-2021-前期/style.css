@@ -1,0 +1,378 @@
+/* メインタイトル(firstpage)の部�? */
+  #main-title{
+    margin: 20px 40px;
+    padding: 7rem;
+    padding-left: 15rem;  
+    color: azure;
+  }
+  #main-title h1{
+    padding-bottom: 6rem;
+    padding-top: 5rem;
+    font-size: 2rem;
+  }
+ 
+ /* メインタイトル(firstpage)の部�?----------- */
+
+ body{
+   background-color: #a59e9e56;
+ }
+
+
+
+.tile-style{
+display: flex;
+justify-content:space-around;
+margin-top: 120px;
+padding: 0 55px;
+
+
+}
+
+
+
+ .container-fluid,
+ .container {
+   max-width: 1200px;
+ }
+
+
+ .top-card {
+   max-width: 300px;
+   background-color: #fff;
+   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+   background-position: center;
+   overflow: hidden;
+   position: relative;
+   margin: 10px auto;
+   cursor: pointer;
+   border-radius: 10px;
+ }
+ 
+ .top-card img {
+   transition: all linear 0.25s;
+   height: 15rem;
+   width: 15rem;
+ }
+ 
+ .top-card .tile-name {
+   position: absolute;
+   left: 30px;
+   bottom: 70px;
+   font-size: 30px;
+   color: #fff;
+   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+   font-weight: bold;
+   transition: all linear 0.25s;
+ }
+ 
+ 
+ .top-card .tile-username {
+   position: absolute;
+   bottom: 50px;
+   left: 30px;
+   color: #fff;
+   font-size: 13px;
+   transition: all linear 0.25s;
+ }
+ 
+
+ 
+ .top-card:hover img {
+   filter: grayscale(100%);
+ }
+ 
+ .top-card:hover .tile-name {
+   bottom: 80px;
+ }
+ 
+ .top-card:hover .tile-username {
+   bottom: 60px;
+ }
+ 
+
+ 
+ 
+ .col-md {
+  margin: 0;
+  padding: 0;
+}
+
+ 
+
+
+
+/* タイル上部の�?�? */
+.contents-title{
+  margin-top: 10rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+article {
+  
+text-align: center;
+
+
+}
+
+article p{
+  font-weight: bold;
+  color:rgba(56, 58, 54, 0.76);
+}
+
+
+/* 実際のホ�?��?ペ�?�ジ制作�?�流れ */
+
+
+.p-1,.p-2,.p-3,.p-4,.p-5,.p-6,.p-7,.p-8{
+  text-align: left;
+  padding-left: 85px;
+  letter-spacing: -.0027777778rem;
+  line-height: 1.75;
+  color: #212121;
+  
+  font-size: 120%;
+}
+
+p,pre{
+  font-family: 'Kiwi Maru', serif;
+  font-size: 15.6px;
+}
+
+
+.tile-username.s-1,.tile-name.s-1{
+  color:rgba(44, 44, 42, 0.973);
+  text-shadow: #212121 30%;
+  /* padding-top: -250px;
+  margin-top: 200px; */
+  margin-bottom: -50px;
+
+}
+.tile-username.s-2,.tile-name.s-2{
+  color:rgba(3, 3, 3, 0.973);
+  text-shadow: #212121 30%;
+  margin-bottom: -50px;
+}
+.tile-username.s-3,.tile-name.s-3{
+  color:rgba(12, 12, 12, 0.973);
+  text-shadow: #212121 30%;
+  margin-bottom: -50px;
+}
+
+.p-4 img{
+  margin-left: 20vw;
+}
+.p-1 a:hover{
+  
+  transform: scale(1.1,2);
+ 
+}
+
+
+#box-1{
+  background-image: url(img/tile4\ .svg);
+  background-size: cover;
+  color: rgb(9, 4, 65);
+
+}
+
+#box-2{
+  background-image: url(img/tile5.svg);
+  background-size: cover;
+  color: rgb(9, 4, 65);
+
+}
+#box-3{
+  background-image: url(img/pm.svg);
+  background-size: cover;
+  color: rgb(9, 4, 65);
+
+}
+
+
+.card{
+  width: 32%;
+  margin: auto;
+  height: 243px;
+  border: 1px solid rgb(35, 44, 75);
+  border-radius: 50%; 
+  background-color: rgb(253 253 253);
+  padding: 20px;
+  box-shadow: 1px 2px 1px rgb(35, 44, 75);;
+  transition: 0.3s;
+  transition: all,0.4s;
+  text-align: unset;
+ 
+
+}
+
+
+.card:hover {
+  box-shadow: -5px 6px 19px 3px rgb(124 118 118 / 20%);
+  transform: scale(1.1,1.1);
+  background-color: rgb(221, 225, 233);
+  color: #20b2aa;
+}
+#box-1:hover{
+  color:#20b2aa;
+}
+#box-2:hover{
+  color:#20b2aa;
+}
+#box-3:hover{
+  color:#20b2aa;
+}
+
+.card a{
+  color: bisque;
+}
+
+
+#box-1  {display:inline-block;
+  position:relative;
+  cursor:pointer;
+ }
+#box-1::after{content:'';
+  position:absolute;
+  left:50%;
+  bottom:-57px;
+  width:60%;
+  height:3px;
+  opacity:0;
+  background-color:#f39c12;
+  transform:translate(-50%,0);
+  transition:all .3s ease-in-out} 
+  /*liを�?�バー時に下線表示*/
+#box-1:hover::after{width:100%;opacity:1}
+
+#box-1 {
+  color:rgb(245, 238, 238);
+  padding: 0 11px;
+  transition: all .3s ease 0s;
+  text-decoration: none;
+  margin-top: 100px;
+  color: rgb(9, 4, 65);
+}
+
+#box-1:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/* -------------- */
+#box-2  {display:inline-block;
+  position:relative;
+  cursor:pointer;
+ }
+#box-2::after{content:'';
+  position:absolute;
+  left:50%;
+  bottom:-57px;
+  width:60%;
+  height:3px;
+  opacity:0;
+  background-color:#f39c12;
+  transform:translate(-50%,0);
+  transition:all .3s ease-in-out} 
+  /*liを�?�バー時に下線表示*/
+#box-2:hover::after{width:100%;opacity:2}
+
+#box-2 {
+  color:rgb(245, 238, 238);
+  padding: 0 11px;
+  transition: all .3s ease 0s;
+  text-decoration: none;
+  margin-top: 100px;
+  color: rgb(9, 4, 65);
+}
+
+#box-2:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/* ---------- */
+#box-3  {display:inline-block;
+  position:relative;
+  cursor:pointer;
+ }
+#box-3::after{content:'';
+  position:absolute;
+  left:50%;
+  bottom:-57px;
+  width:60%;
+  height:3px;
+  opacity:0;
+  background-color:#f39c12;
+  transform:translate(-50%,0);
+  transition:all .3s ease-in-out} 
+  /*liを�?�バー時に下線表示*/
+#box-3:hover::after{width:100%;opacity:1}
+
+#box-3 {
+  color:rgb(245, 238, 238);
+  padding: 0 11px;
+  transition: all .3s ease 0s;
+  text-decoration: none;
+  margin-top: -0px;
+  color: rgb(9, 4, 65);
+}
+
+#box-3:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+
+
+
+.tile-1{
+ 
+  width: 95%;
+  display: flex;  
+  margin: auto;
+padding-bottom: 100px;
+ 
+
+}
+
+section h1{
+  margin-top: 30px;
+  font-weight: 900;
+  font-size: 1.7rem;
+}
+
+
+.fadeUpTrigger{
+  opacity: 0;
+  }
+  .fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+@keyframes fadeUpAnime{
+from {
+    opacity: 0;
+    transform: translateY(100px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+main p{
+  margin-top: -2rem;
+  font-family: 'Kiwi Maru', serif;
+  
+}
+
+main h1{
+  font-family: 'Kiwi Maru', serif;
+}
+.card h1{
+  margin-top: 242px;
+}

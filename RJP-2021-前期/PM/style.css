@@ -1,0 +1,630 @@
+@charset "utf-8";
+
+/* 共通部分
+---------------------------------*/
+* {
+	margin: 0;
+	 padding: 0;
+	 box-sizing: border-box;
+	 text-decoration: none;
+   }
+html {
+       font-size:120%;
+}
+body {
+      font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro       W3", sans-serif;/*sansはwithoutと一緒の意味　serifはウロコ(ヒゲ飾り)*/
+      line-height: 1.8;
+      color: #432;/*#443322と同義*/
+}
+
+header {
+  background-color: #00233300;
+  width: 100vh;
+  height: 50vh;
+	font-family: fantasy;
+
+
+  
+  /* ここで各ページのヘッダーを設定する */
+
+  
+}
+div>header{
+	background-image: url(img/banner1.jpg);
+}
+
+a {
+    text-decoration: none;
+	color: #1a0dab;
+}
+
+a:hover:not(.mylogo,.btn,header a)
+{
+	text-decoration: underline;
+	color: #f89172
+}
+.page-header {
+     display: flex;
+     justify-content: space-between;
+}
+.wrapper{
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 4%;
+	margin-left: 30px;
+}
+/* HOME
+-------------------*/
+
+.home-content p {
+	font-size: 1.125rem;/*remフォントサイズの単位　使いやすくhtml要素で指定したサイズを1とする単位*/
+	margin: 10px 0 42px;
+}
+/*NEWS
+------------*/
+
+.post-info {
+	margin-left: -140px;
+	margin-bottom: -112px;
+	padding-top: 100px;
+}
+.post-title {
+	font-family: "Yu Mincho", "Yumincho",serif;
+	font-size: 48.832px;
+	font-weight: normal;
+	letter-spacing: -.0027777778rem;
+	line-height: 1.8;
+	color: #212121;
+    max-width: 85ch;
+}
+
+.edita
+{
+	margin-bottom: 40px !important;
+	margin-top: 0 !important;
+}
+
+.post-title,
+.post-cat {
+	margin-left: 138px;
+	margin-top: -56px;
+	display:  flex;
+}
+/*　記事部分*/
+article {
+	width: 74%;
+	margin-bottom: 50px;
+	
+}
+article img {
+	margin-bottom: 10px;
+}
+article p:not(html){
+	margin-top: 40px;
+}
+
+/*サイドバー*/
+aside {
+	width: 22%;
+	position: relative; top: 50px;left: 100px;
+}
+aside p {
+	padding: 12px 10px;
+}
+.news-contents {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+.sub-title{
+	font-size: 1.375rem;
+	padding: 0 8px 8px;
+	border-bottom: 2px #0bd solid;
+	font-weight: normal;
+}
+.sub-menu {
+	margin-bottom: 60px;
+	list-style: none;
+}
+.sub-menu li {
+	border-bottom: 1px #ddd solid;
+}
+.sub-menu a {
+	color: #432;
+	padding: 10px;
+	display: block;
+}
+.sub-menu a:hover {
+	color: #0bd;
+}
+.widget--sticky
+{
+	position: sticky;
+  top: 20px;
+}
+header {
+	background-color: #00233300;
+	width: 100vh;
+	height: 50vh;
+	/* ここで各ページのヘッダーを設定する */
+  }
+#home{
+	background-image: url(../gazou/d706546615fd2c973920c2272fb86e87_t.jpeg);	
+}
+  
+  nav {
+	margin-left: 1rem;
+	margin-top: 0.3rem;
+	display: flex;
+  }
+  
+  /* 右上ナビゲーションバーのホバーアニメーション */
+  
+  header nav .nav-link {display:inline-block;
+	position:relative;
+	cursor:pointer}
+  header nav .nav-link::after{content:'';
+	position:absolute;
+	left:50%;
+	bottom:-14px;
+	width:60%;
+	height:3px;
+	opacity:0;
+	background-color:#f39c12;
+	transform:translate(-50%,0);
+	transition:all .3s ease-in-out} 
+	/*liをホバー時に下線表示*/
+  header nav .nav-link:hover::after{width:100%;opacity:1}
+  
+  header nav .nav-link {
+	color:rgb(245, 238, 238);
+	padding: 0 11px;
+	transition: all .3s ease 0s;
+	text-decoration: none;
+  }
+  
+  header nav .nav-link:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+  }
+  
+  
+	.logo .mylogo {
+	font-size: 40px;
+	margin-left: 5rem;
+	position: relative;
+	top: 26px;
+	color:rgb(212, 33, 33);
+  }
+  
+  
+
+  
+  
+  
+  /*for tablets */
+  @media screen and (min-width: 490px) {
+	header {
+	  width: 100%;
+	}
+	.logo .mylogo {
+	  font-size: 38px;
+	  margin-left: 9.5rem;
+	}
+	nav {
+	  margin-left: 4rem;
+	}
+	nav .nav-link {
+	  color: white;
+	  padding: 0 30px;
+	}
+  }
+  /*for pc small screen */
+  @media screen and (min-width: 720px) {
+	header {
+	  width: 100%;
+	  position: relative;
+	}
+	.logo .mylogo {
+	  font-size: 30px;
+	  margin-left: 1rem;
+	  position: relative;
+	  top: 27px;
+	}
+	nav {
+	  margin-right: 3rem;
+	  float: right;
+	  line-height: 2px;
+	}
+	nav .nav-link {
+	  padding: 10px 30px;
+	}
+  }
+  /*for pc large screen*/
+  @media screen and (min-width: 1200px) {
+	header {
+	  width: 100%;
+	  position: relative;
+	}
+	.logo .mylogo {
+	  font-size: 30px;
+	  
+	  margin-left: 5rem;
+	  position: relative;
+	  top: 29px;
+	}
+	nav {
+	  margin-right: 5rem;
+	  float: right;
+	  margin-bottom: 35px;
+	}
+	nav .nav-link {
+	  padding: 10px 0px;
+	  margin: 0 40px;
+	  font-size: 25px;
+	}
+	img {
+	  width: 100%;
+	  height: auto;
+	  margin-top: 10px;
+	  
+  }
+  }
+  
+/* タイトル(firstpage)の部分 */
+
+
+
+
+/* footerの設定ーーーーーーーーーーーーーーーーーーーー */
+footer .nav-link {display:inline-block;
+	position:relative;
+	cursor:pointer}
+  
+  footer .nav-link:hover::after{width:100%;opacity:1}
+  footer .nav-link {
+	color:rgb(245, 238, 238);
+	padding: 0 11px;
+	transition: all .3s ease 0s;
+	text-decoration: none;
+	padding: 10px;
+  }
+  footer .nav-link:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+	color: rgb(5, 0, 0);
+	background-color: rgb(221, 166, 38);
+	width: 6rem;
+  }
+
+  footer{
+   background-color: rgb(38, 48, 51);
+   text-align: center;
+   color: white;
+   text-align: left;
+   margin-bottom: -10%;
+   }
+  footer ul li a{
+	color: #fff;
+  }
+  footer ul{
+  list-style-type: none;
+  margin-top: 12px;
+  padding-left: 84px;
+  padding-top: 72px;
+  }
+  .copy{
+  margin: 40px;
+  text-align: center;
+  }
+  .h2
+  {
+	letter-spacing: -.0027777778rem;
+	line-height: 1.75;
+	color: #212121;
+	max-width: 85ch;
+	font-size: 39.056px;
+}
+.html{
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+.ul{
+	margin-left: 20px;
+}
+.saisyo{
+	margin-top: 0 !important;
+}
+h2{
+	margin-top: 60px;
+}
+.ol{
+	margin-left: 20px;
+}
+.aaa{
+
+
+		border-style: solid;
+		border-radius: 20%;
+		background-color: antiquewhite;
+	
+	
+}
+
+
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+	
+}
+
+a.btn-border-shadow--radius {
+  border-radius: 100vh;
+}
+a.btn-border-shadow {
+  padding: calc(1.5rem - 12px) 3rem 1.5rem;
+
+  background: #fff;
+}
+
+a.btn-border-shadow:before {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+
+  width: 100%;
+  height: 100%;
+
+  content: "";
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  border: 3px solid #000;
+  border-radius: 0.5rem;
+}
+
+a.btn-border-shadow--radius:before {
+  border-radius: 100vh;
+}
+
+a.btn-border-shadow:hover {
+  padding: calc(1.5rem - 6px) 3rem;
+}
+
+a.btn-border-shadow:hover:before {
+  top: 0;
+  left: 0;
+}
+
+.btn.next{
+margin-left: 30rem !important;
+}
+.btn.back{
+	margin-top: -5.4rem;
+}
+
+.next-back{
+	display: block;
+}
+
+article{
+	margin-left: 4.5wv
+}
+
+
+
+	.btn.next{
+	margin-left: 26rem !important;
+	}
+	
+  p img{
+    width: 50%;
+  }
+
+header h1{
+	font-size: 44.832px;
+	font-weight: 900;
+	font-family: monospace !important;
+}
+
+/* CSS */
+#sample figure{
+  margin: 0;
+  display: none;
+}
+#sample figure:target{
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+#sample figure:target #overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	background: rgba(41, 39, 39, 0.801);
+  text-decoration: none;
+  color: inherit;
+}
+#sample figure:target img{
+  animation: fadein .3s;
+}
+@keyframes fadein{
+  0%{
+    transform: scale(0.2);
+    opacity: 0.2;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+/* CSS */
+#sample1 figure{
+  margin: 0;
+  display: none;
+}
+#sample1 figure:target{
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+#sample1 figure:target #overlay1{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	background: rgba(41, 39, 39, 0.801);
+  text-decoration: none;
+  color: inherit;
+}
+#sample1 figure:target img{
+  animation: fadein .3s;
+}
+@keyframes fadein{
+  0%{
+    transform: scale(0.2);
+    opacity: 0.2;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+/* CSS */
+#sample2 figure{
+  margin: 0;
+  display: none;
+}
+#sample2 figure:target{
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+#sample2 figure:target #overlay2{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(41, 39, 39, 0.801);
+  text-decoration: none;
+  color: inherit;
+}
+#sample2 figure:target img{
+  animation: fadein .3s;
+}
+@keyframes fadein{
+  0%{
+    transform: scale(0.2);
+    opacity: 0.2;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* CSS */
+#sample3 figure{
+  margin: 0;
+  display: none;
+}
+#sample3 figure:target{
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+#sample3 figure:target #overlay3{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(41, 39, 39, 0.801);
+  text-decoration: none;
+  color: inherit;
+}
+#sample3 figure:target img{
+  animation: fadein .3s;
+}
+@keyframes fadein{
+  0%{
+    transform: scale(0.2);
+    opacity: 0.2;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+body{
+	font-family: 'Kiwi Maru', serif;
+	line-height: 1.8;
+}

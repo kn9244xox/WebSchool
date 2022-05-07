@@ -1,0 +1,70 @@
+/* 以下sub-topで共通の項目 */
+
+* {
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fantasy;
+    text-decoration: none;
+  }
+  body {
+      width: 100%;
+      height: auto;
+      margin: 0%;
+      font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+      line-height: 1.7;
+      color: #432;
+    
+  }
+   .card{
+    width: 30%;
+    margin: auto;
+    height: 200px;
+    border: 1px solid rgb(212, 33, 33);
+    border-radius: 5px; 
+    padding: 20px;
+    box-shadow: 1px 2px 1px rgb(212, 33, 33);;
+    transition: 0.3s;
+    transition: all,0.4s;
+    text-align: center;
+
+
+  }
+  #box-1{
+    background-image: url(img/1.jpg);
+  }
+  #box-2{
+    background-image: url(img/2.jpg);
+  }
+  #box-3{
+    background-image: url(img/3.jpg);
+  }
+  .card:hover {
+    box-shadow: -5px 6px 19px 3px rgb(124 118 118 / 20%);
+    transform: scale(1.1,1.1);
+    background-color: rgb(221, 225, 233);
+    color: #20b2aa
+    
+  }
+  .card a{
+    color: bisque;
+  }
+ 
+ main{
+    display: flex;
+    margin: 100px 00px;
+  }
+
+
+
+/* 上記sub-topで共通の項目------------------------- */
+
+  
+
+
+
+
+
+
+/* 下記sub-topで共通の項目------------------------- */
+

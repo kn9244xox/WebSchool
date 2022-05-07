@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <title>Web School</title>
+  <link rel="icon" href="img/design-icon-14.jpg ">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/fotter.css">
+   <!-- fotterの設定 -->
+  <link rel="stylesheet" href="css/top-header.css">
+   <!-- headerの設定 -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/3-2-3-1.css">
+</head>
+
+<body>
+  <!--画面上部の設定-->
+  <div id="home" >
+  <header>
+    <div class="logo">
+      <a href="index.html" class="mylogo">Web School</a>
+    </div>
+    <!-- 動画背景 -->
+	<!-- 背景用の動画ファイル -->
+  <div id="video-area">
+    <video id="video" poster="img/movie.jpg" webkit-playsinline playsinline muted autoplay loop>
+      <!--
+          poster：動画ファイルが利用できない環境で代替表示される画像
+          webkit-playsinline：iOS 9までのSafari用インライン再生指定
+          playsinline：iOS 10以降のSafari用インライン再生指定
+          muted：音声をミュートさせる
+          autoplay：動画を自動再生させる
+          loop：動画をループさせる
+          controls：コントロールバーを表示する
+      -->
+    <source src="vid/backgroundvideo.mp4" type="video/mp4">
+    <source src="video/movie.ogv" type="video/ogv">
+    <source src="video/movie.webm" type="video/webm">
+    <p>動画を再生できる環境ではありません。</p>
+    </video>
+      <!--/video-area--></div>
+
+    <nav>
+      <a class="nav-link" href="index.html">トップ</a>
+      <a class="nav-link" href="preparation-sub-top\preparatiion.html">制作準備</a>
+      <a class="nav-link" href="html-sub-top\create.html">作り方</a>
+      <a class="nav-link" href="design-sub-top\design.html">デザイン</a>
+    </nav>
+    </header>
+  <div><!---------------------#home-------------------->
+
+    <main>
+      <div id="main-title">
+      <h1>あなたは本気でホームページを作りたいですか？ </h1>
+
+      <p>初心者でも分かりやすいようにホームページ制作に必要なHTML・CSSの知識を説明してます
+      </p>
+      </div><!--main-title--------->
+
+      <!-- タイル上部の文字 -->
+   
+      <section class="contents-title">以下のメニューボタンからHTML・CSSについて学べます</section>
+
+    
+      
+      <!-- タイルの設定 -->
+
+      <div class="tile-style">
+        <section  class="fadeUpTrigger">
+          <a href="preparation-sub-top/preparatiion.html">
+        <div class="container">
+          <div class="row">
+            <div class="col-md">
+            <h4 class="text-center"><strong></strong></h4>
+            <hr>
+            <div class="top-card"><img src="img/tile1.svg" class="img img-responsive">
+                <div class="tile-name s-1">必要な準備</div>
+                <div class="tile-username s-1">開発環境・前提知識</div>
+
+            </div>
+        </div>
+      </a>
+      </section>
+
+      <section class="s-2 fadeUpTrigger">
+        <a href="html-sub-top/create.html">
+        <div class="container">
+          <div class="row">
+            <div class="col-md">
+            <h4 class="text-center"><strong></strong></h4>
+            <hr>
+            <div class="top-card"><img src="img/tile2.svg" class="img img-responsive">
+                <div class="tile-name s-2">HTMLの基本</div>
+                <div class="tile-username s-2">制作に必要な基本文法</div>
+ 
+            </div>
+        </div>
+        </div>
+      </a>
+      </section>
+
+
+        <section class="s-3 fadeUpTrigger">
+          <a href="design-sub-top/design.html">
+        <div class="container">
+          <div class="row">
+            <div class="col-md">
+            <h4 class="text-center"><strong></strong></h4>
+            <hr>
+            <div class="top-card"><img src="img/3.svg" class="img img-responsive" >
+                <div class="tile-name s-3">デザイン力</div>
+                <div class="tile-username s-3">CSSの基礎とレイアウトが学べます</div>
+ 
+            </div>
+     </div>
+    </a>
+      </section>
+      </div>
+
+      <!-- タイルの設定 -->
+
+
+      <article>
+
+        <br>
+        <br>
+        
+
+
+        <h1>90%の人がプログラミングで挫折をしている</h1>
+        <br>
+        <p>WEB業界は伸び続け、需要も高まっています<br>
+          そんな中、HTMLを学んだりCSSを学んだりする人が増えています。<br>
+          ただ実際には独学で学ぶ人も多く、挫折する人が多いのも事実です。<br>
+          特に初心者の方は何から学べばいいのかわからないと思います<br>
+          そこで我々は一つのサイトで体系的に学べるように心がけました。<br>
+          初心者にも分かりやすいよう、図解などを多用し直観的に学べるサイトを目標にしています<br>
+        </p>
+       <br>
+
+       <section class="tile-1 fadeUp ">
+       <a href="article/article-1.html" class="card box" id="box-1">
+        <h1>ホームページ制作の流れ</h1>
+        <h4></h4>
+      </a>
+    
+      <a href="article/article-2.html" class="card box" id="box-2">
+        <h1>サイト制作に必要な工夫</h1>
+        <h4></h4>
+      </a>
+    
+    </section>
+
+    <section class="tile-1 fadeUp ">
+      <a href="PM/pm.html" class="card box" id="box-3">
+       <h1>制作の計画書</h1>
+       <h4></h4>
+     </a>
+     <br><br>
+   </section>
+
+
+        
+
+
+
+
+
+      </article>
+
+    
+</div>
+   
+
+
+
+    </main>
+    </div>
+      <!-- footerの設定点記述 -->
+    <footer>
+      <div>
+        <ul>
+          <li><a class="nav-link" href="preparation-sub-top\preparatiion.html" >制作準備</a></li>
+          <li><a class="nav-link" href="html-sub-top\create.html" >作り方&nbsp;&nbsp;</a></li>
+          <li><a class="nav-link" href="design-sub-top\design.html" >デザイン</a></li>
+        </ul>
+      </div>
+      <div class="copy">
+        <p><small> Copyright &copy; 2021 All Rights Reserved by 僕たちも素人でした</small></p>
+      </div>
+    </footer>
+  
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-1/js/3-2-3-1.js"></script>
+   
+</body>
+
+</html>

@@ -1,0 +1,293 @@
+/* 以下sub-topで共通の項目 */
+
+* {
+  margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: fantasy;
+   text-decoration: none;
+ }
+ body {
+     width: 100%;
+     height: auto;
+     margin: 0%;
+     font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+     line-height: 1.7;
+     color: #432;
+     
+   
+ }
+ html {
+   scroll-behavior: smooth;
+ }
+
+
+
+
+/* 上記sub-topで共通の項目------------------------- */
+
+main{
+ display: block;
+ margin: 100px 00px;
+}
+.card{
+ width: 555px;
+ margin: auto;
+ height: 257px;
+ border: 1px solid rgb(76, 123, 138);
+ border-radius: 5px; 
+ padding: 20px;
+ box-shadow: 1px 2px 1px rgb(76, 123, 138);
+ transition: 0.3s;
+ transition: all,0.4s;
+ /* text-align: center;*/
+} 
+.card1{
+ width: 555px;
+ margin: auto;
+ height: 257px;
+ border: 1px solid rgb(76, 123, 138);
+ border-radius: 5px; 
+ padding: 20px;
+ box-shadow: 1px 2px 1px rgb(76, 123, 138);
+ transition: 0.3s;
+ transition: all,0.4s;
+ /* text-align: center;*/
+} 
+.card2  {
+  width: 555px;
+  margin: auto;
+  height: 257px;
+  border: 1px solid rgb(76, 123, 138);
+  border-radius: 5px; 
+  padding: 20px;
+  box-shadow: 1px 2px 1px rgb(76, 123, 138);
+  transition: 0.3s;
+  transition: all,0.4s;
+  margin-top: 50px;
+  /* text-align: center;*/
+ } 
+#box-1{
+ background-image: url(img/tile11.svg);
+ background-repeat: no-repeat;
+ background-size: 350px 300px;
+ background-position: -2rem;
+}
+#box-2{
+ background-image: url(img/tile22.svg);
+ background-repeat: no-repeat;
+ background-position: 15rem;
+}
+#box-3{
+  background-image: url(img/tile33.svg);
+  background-repeat: no-repeat;
+  background-size: 350px 300px;
+  background-position: -2rem;
+ }
+.card:hover,.card1:hover,.card2:hover  {
+ box-shadow: -5px 6px 19px 3px rgb(124 118 118 / 20%);
+ transform: scale(1.1,1.1);
+ background-color: rgb(221, 225, 233);
+ color: #20b2aa;
+ 
+}
+
+main>a{
+ display: block;
+ width: 28rem;
+ /* align-items: center; */
+
+ 
+}
+
+main .p-2{
+ color: rgb(85, 78, 78);
+ font-size: 2rem;
+ font-weight: 900;
+}
+
+
+main .p-1{
+ color: rgb(255, 255, 255);
+ font-size: 2rem;
+ font-weight: 900;
+}
+
+
+main h1{
+ margin-left: 253px;
+ font-size: 22px;
+ font-weight: 900;
+ font-family: 'Kiwi Maru', serif;
+ color: rgb(38, 41, 92);
+}
+.card1 h1{
+ margin-left: 13px;
+ font-size: 22px;
+ font-weight: 900;
+ font-family: 'Kiwi Maru', serif;
+ color: rgb(38, 41, 92);
+}
+main h4 {
+
+ font-size: 16px;
+ font-family: 'Kiwi Maru', serif;
+ color: rgb(74, 76, 107);
+}
+}
+
+/* 左へ */
+.flipLeft{
+ animation-name:flipLeftAnime;
+ animation-duration:1s;
+ animation-fill-mode:forwards;
+ perspective-origin:left center;
+ opacity:0;
+ }
+ 
+ @keyframes flipLeftAnime{
+   from {
+    transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+    opacity: 0;
+   }
+ 
+   to {
+   transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+   opacity: 1;
+   }
+ }
+ 
+ 
+ /* 左上へ */
+ .flipLeftTop{
+ animation-name:flipLeftTopAnime;
+ animation-duration:1s;
+ animation-fill-mode:forwards;
+ opacity:0;
+ }
+ 
+ @keyframes flipLeftTopAnime{
+   from {
+    transform: translate(-20px,80px) rotate(-15deg);
+    opacity: 0;
+   }
+ 
+   to {
+    transform: translate(0,0) rotate(0deg);
+   opacity: 1;
+   }
+ }
+ 
+ /* 右へ */
+ .flipRight{
+ animation-name:flipRightAnime;
+ animation-duration:1s;
+ animation-fill-mode:forwards;
+ perspective-origin:right center;
+ opacity:0;
+ }
+ 
+ @keyframes flipRightAnime{
+   from {
+    transform: perspective(600px) translate3d(0, 0, 0) rotateY(-30deg);
+    opacity: 0;
+   }
+ 
+   to {
+   transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+   opacity: 1;
+   }
+ }
+
+ HTML CSSResult Skip Results Iframe
+ EDIT ON
+ /* body {
+   background-image: url(http://p1.pichost.me/i/11/1344899.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+   font-weight: bold;
+   font-size: 14px;
+ }
+  */
+ main .wrap {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-top: -86px;
+   margin-left: -89px;
+   text-align: center;
+ }
+ 
+ main a {
+   -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+   -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+   -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+   -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+   transition: all 400ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+   display: block;
+   margin: 20px auto;
+
+   text-decoration: none;
+   border-radius: 4px;
+   padding: 20px 30px;
+   font-family: 'Kiwi Maru', serif;
+   
+ }
+ 
+ main a.button {
+   color: rgba(30, 22, 54, 0.6);
+   box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+ }
+ 
+ main a.button:hover {
+   color: rgba(255, 255, 255, 0.85);
+   box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
+ }
+ 
+ main a.button2 {
+   color: rgba(30, 22, 54, 0.6);
+   box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+ }
+ 
+ main a.button2:hover {
+   color: rgba(255, 255, 255, 0.85);
+   box-shadow: rgba(30, 22, 54, 0.7) 0 80px 0px 2px inset;
+ }
+
+
+/* 下記sub-topで共通の項目------------------------- */
+
+/*==================================================
+ふわっ
+===================================*/
+
+
+/* fadeUp */
+
+.fadeUp{
+  animation-name:fadeUpAnime;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  }
+  
+  @keyframes fadeUpAnime{
+    from {
+      opacity: 0;
+    transform: translateY(100px);
+    }
+  
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }
+  
+  
+  /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+   
+  .fadeUpTrigger{
+      opacity: 0;
+  }
+  

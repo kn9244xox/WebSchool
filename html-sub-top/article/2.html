@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<!--CSS-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<title>Headタグを理解しよう</title>
+
+<link rel="icon" href="../img/logo.jpg">
+
+</head>
+
+<body>
+    <div id="home">
+        <header>
+          <div class="logo">
+            <a href="../../index.html" class="mylogo">Web School</a>
+          </div>
+          <nav>
+            <a class="nav-link" href="../../index.html">トップ</a>
+            <a class="nav-link" href="../../preparation-sub-top/preparatiion.html">制作準備</a>
+            <a class="nav-link" href="../create.html">作り方</a>
+            <a class="nav-link" href="../../design-sub-top/design.html">デザイン</a>
+          </nav>
+        
+          </header>
+      </div>
+
+      <div id="news" class="big-bg">
+
+        <div class="news-contents wrapper"> 
+        <article>
+        <header class="post-info">
+        <h1 class="post-title"><b>Headタグを理解しよう</b></h1>
+        </header>
+
+<h2 class="saisyo">ここでは基本的な以下のタグを詳しく解説していきます。</h2>
+<ul class="ul">
+<li class="tagu">metaタグ</li>
+<li class="tagu">titleタグ</li>
+<li class="tagu">linkタグ</li>
+</ul>
+
+
+<h2 id="tagu">metaタグについて</h2>
+<pre><p class="html">
+  <span style="background: linear-gradient(transparent 70%, #ffff7f 0%);"><b>文書のメタ情報（文書の説明や文字エンコーディングなど）を記述するもの</b></span>でhead要素だけで使用されます。
+</p></pre>
+
+<h2>&lt;meta charset=”UTF-8″&gt;</h2>
+<pre><p class="html">
+上記は、UTF-8の文字種類でHTML文書を書きますという宣言です。
+これを書いてないと<span style="background: linear-gradient(transparent 70%, #ffff7f 0%);"><b>「文字化け」などの原因</b></span>となることがあります。
+決まり文句として内の最初に書いておくとよいです。</p></pre>
+
+<h2>&lt;meta name=”description” content=“…”&gt;</h2>
+<pre><p class="html">
+サイトの概要を説明するもので、検索結果の画面に表示される部分です。
+ここに入力した内容が、GoogleやYahooといった検索エンジンが認識・識別し、
+<span style="background: linear-gradient(transparent 70%, #ffff7f 0%);"><b>どのページがユーザーに とって必要なのか判断します。</b></span>
+つまり、SEO（検索ヒットするかどうか）上、大変重要な役割です。
+</p></pre>
+  <img src="201html.png" alt="サンプル画像です。">
+  <br><br><br>
+  <img src="202html.png" alt="サンプル画像です。">
+<h2 id="tagu2">titleタグについて</h2>
+<pre><p class="html">
+Webページのタイトルを記述する、SEO上も重要な要素で検索エンジンの結果にも一覧表示されます。
+<span style="background: linear-gradient(transparent 70%, #ffff7f 0%);"><b>タイトルを付ける際は、Webページの内容に合ったものにするとよいです。</b></span></p></pre>
+<h2 id="tagu3">linkタグについて</h2>
+<pre class="siyou"><p class="html">
+スタイルシートなどの外部ファイルを参照する際に使用する
+・rel属性：外部ファイルのタイプを指定する
+・href属性：外部ファイルの場所を指定する
+
+
+
+</p></pre>
+
+    <div class="next-back">
+    <a href="3.html" class="btn btn-border-shadow btn-border-shadow--radius next">次へ</a>
+    <a href="1.html" class="btn btn-border-shadow btn-border-shadow--radius back">戻る</a>
+  </div>
+
+
+
+      </article>
+
+        <aside>
+          <div class="widget--sticky">
+            <h3 class="sub-title">目次</h3>
+            <ul class="sub-menu">
+            <li><a href="#tagu">metaタグ</a></li>
+            <li><a href="#tagu2">titleタグ</a></li>
+            <li><a href="#tagu3">linkタグ</a></li>
+            </ul>
+          </div>
+          </aside>
+          </div>
+
+<footer>
+    <div>
+      <ul>
+        <li><a class="nav-link" href="../../preparation-sub-top/preparatiion.html" >制作準備</a></li>
+        <li><a class="nav-link" href="../create.html" >作り方&nbsp;&nbsp;</a></li>
+        <li><a class="nav-link" href="../../design-sub-top/design.html" >デザイン</a></li>
+      </ul>
+    </div>
+    <div class="copy">
+      <p><small> Copyright &copy; 2021 All Rights Reserved by 僕たちも素人でした</small></p>
+    </div>
+  </footer>
+</body>

@@ -1,0 +1,204 @@
+セレクターの説明をします
+大きく分けて四つ
+
+1要素クラスIDによるセレクター
+2属性によるセレクター
+3疑似クラスおよび疑似要素によるセレクター
+4
+
+
+タイプセレクター(div p header ..etc)
+htmlの要素を直接指定してスタイリングする方法
+
+
+h1 {
+	color:pink;
+}
+
+h1, p{
+color:pink;
+}
+
+指定したものすべて反映される
+
+bodyタグを指定して背景色を変えたりするのにつかったりする。
+
+classセレクタ
+
+<h1 class="test">
+
+.test{
+color pink
+}
+
+クラスを付けたところだけは遺影、複数使える
+
+
+<h1 class="big title" > のように複数クラスも設定できる
+セレクタも組み合わせる
+
+.title.big{
+}
+titleかつbigのときに使える
+
+idセレクタはほぼclassセレクタと同じ
+
+クラスと違うところは#で始まるところ
+
+idは基本的には一回しか使えない
+ドキュメント内で一つしか指定できない
+idの値に複数指定できない
+class="big title"のようにできない
+
+基本的には、詳細度が高くなってしまうので、class
+使うのが基本
+
+ユニバーサルセレクタ
+
+全てに影響を与えるセレクタ
+*{
+color:red;
+
+}
+
+全ての要素が変わる
+article *{
+color red
+
+}
+articleのすべての要素を変える
+
+
+ここで1終わり
+2
+
+属性
+
+
+aタグの中にhref属性がある
+
+a[href]{
+color red
+}
+aタグでhref属性を持つものを変えてっていう意味
+部分文字列一致セレクタ
+
+例えば
+a [href="yahoo.com"]{
+color
+}
+yahoo.comになっているものが偏光される
+
+a [href*="yharoo"]{
+
+}
+yahooという文字列が入っているもののみ変更される
+
+a [href$=".co.jp"]{
+color
+}
+最後の文字列の指定
+
+
+
+
+a [href^="https://www]{
+color
+}
+初めの文字が"https://www]で始まっているもののみ適応
+
+
+
+
+
+3疑似クラス
+
+
+article p:first-of-type{(firstoftypeはpタグしか見ていないのでh1間にあっても適応される)
+
+	color red
+}
+first-child
+一番最初にきている要素も考慮する
+例えば、pタグの前にh1タグがあった場合は反映されない
+last-of-typeなどもある
+article p:nth-of-type(数は何番目でも指定して使える){
+
+}
+
+article p:not(:first-of-type){
+color red
+}
+
+一番最初以外を赤くするという:not属性
+
+
+:hover属性
+
+p:hover{
+backgroundcolor pink
+}
+マウスをホバーするとピンク
+:not属性をつけれる
+p:not(:hover)
+
+
+:after
+
+h1::after{
+	content="!!!!"
+}
+
+h1の要素の後に!!!がつく
+beforは要素の前
+
+p::first-line{
+color red
+}
+
+最初のラインだけ適応
+::first-letter{
+}
+
+最初の文字誰適応
+
+結合し
+子孫結合し
+article *{
+color red
+}
+
+article p{
+color red
+}
+
+main article h1{
+
+}
+ここまでもかける
+ただあまり増やしすぎると可読性が低下
+
+
+子結合子
+main > h1{
+
+}
+メイン直下のh1にだけ適応したいとき
+
+隣接兄弟結合し
+
+pタグの2番目と3番目だけに充てたいとき
+
+article p +p{
+color
+margin-top 40px
+}
+pの次のpからカラーを変えてください
+
+一般兄弟結合し
+article h1～p{
+
+}
+ h1より後ろのpに対してカラー変更してくださいというもの
+
+

@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<!--CSS-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<title>Body要素の中について</title>
+<link rel="icon" href="../img/logo.jpg">
+
+
+</head>
+
+<body>
+    <div id="home">
+        <header>
+          <div class="logo">
+            <a href="../../index.html" class="mylogo">Web School</a>
+          </div>
+          <nav>
+            <a class="nav-link" href="../../index.html">トップ</a>
+            <a class="nav-link" href="../../preparation-sub-top/preparatiion.html">制作準備</a>
+            <a class="nav-link" href="../create.html">作り方</a>
+            <a class="nav-link" href="../../design-sub-top/design.html">デザイン</a>
+          </nav>
+          </header>
+      </div>
+
+      <div id="news" class="big-bg">
+
+        <div class="news-contents wrapper"> 
+        <article>
+        <header class="post-info">
+        <h1 class="post-title">Body要素の中について</h1>
+        </header>
+
+        
+
+<pre class="link">
+<h2 id="t1">この要素の中には以下のタグが入ります</h2>
+    <ul class="ul">
+　  <li>テキスト、フォントタグ</li>
+　  <li>リンクタグ</li>
+　  <li>リストタグ</li>
+　  <li>イメージタグ</li>
+　  <li>テーブルタグ</li>
+　  <li>フォームタグ</li>
+　  <li>その他</li>
+　  </ul>
+<h2 id="t2">テキスト・フォントタグについて</h2>
+<ol class="ol">
+<li>見出し・段落・改行...
+&lt;h1&gt; 見出し1
+&lt;h2&gt; 見出し2
+&lt;h3&gt; 見出し3
+&lt;h4&gt; 見出し4
+&lt;h5&gt; 見出し5
+&lt;h6&gt; 見出し6
+&lt;p&gt; 段落を示す
+&lt;br&gt; 改行される
+&lt;nobr&gt; 改行されない
+&lt;address&gt; 連絡先が明記される
+</li>
+表示例
+<img src="text3.png" alt="テキストフォントタグ表示例">
+
+<li>文字の装飾
+&lt;ruby&gt; ルビの関連部分を示す
+&lt;rb&gt; 対象のテキスト（ルビベース）を示します。
+&lt;rp&gt; ふりがな（ルビテキスト）を示します。
+&lt;rt&gt; 未対応ブラウザで表示される内容（記号）。
+</li>
+表示例
+<img src="rubi.png" alt="ルビタグ表示例">
+
+
+<li>引用...
+&lt;blockquote&gt; 引用文を示す（長文）
+&lt;q&gt; 引用文を示す（短文）
+&lt;cite&gt; 引用元を明示する
+</li>
+表示例
+<img class="hyouzirei2" src="blockquote.png" alt="blockquote表示例">
+</ol>
+
+<h2 id="t3">・リンクタグについて</h2>
+<ol class="ol">
+<li> リンクを設定する
+&lt;a href"リンク先のurl"&gt; ページへリンクする
+&lt;a href"リンク先のurl"&gt;&lt;img src="画像" alt="任意名"&gt; 画像へリンクする
+&lt;a href="#任意名"&gt;と&lt;～id="任意名"&gt;　同じページの特定部分へリンクする
+&lt;a href"リンク先のurl#任意名"&gt;と&lt;～id="任意名"&gt;　別ページの特定部分へリンクする
+</li>
+表示例
+<img class="hyouzirei" src="apng.png" alt="link表示例">
+</ol>
+<h2 id="t4">リストタグについて</h2>
+<ol class="ol">
+<li>箇条書きリスト
+&lt;ul&gt; 順不同のリストの範囲を指定
+&lt;li&gt; リストの項目を記述する
+</li>
+<li>番号付きリスト
+&lt;ol&gt; 順序付きのリストの範囲を指定
+&lt;li&gt; リストの項目を記述する
+</li>
+<li>定義型リスト
+&lt;dl&gt; 定義型リストの範囲を指定
+&lt;dt&gt; 定義する用語を記述する
+&lt;dd&gt; dtで記述した用語の説明をする
+</li>
+</ol>
+表示例
+<img src="rist.png" alt="リストタグ表示例">
+<h2 id="t5">・イメージタグについて</h2>
+<ol class="ol">
+<li>画像の表示
+&lt;img src ～  alt ～ &gt;imgで画像を表示 srcはリンク。altは表示されなかった時の説明
+表示例
+<img class="hyouzirei2" src="gazou.png" alt="画像表示例">
+</li>
+</ol>
+<ol class="ol">
+<li>表全体の指定...
+&lt;table&gt; 1つのテーブル全体を囲う
+&lt;table border = 1&gt; 枠線を作る(基本は1のみ)
+&lt;tr&gt; テーブルの行を表す
+&lt;td&gt; その他のセルを表す
+&lt;th&gt; ヘッダー（見出し）となるセル（1つ1つのマス目）を表す
+&lt;td(th)rowspan(colspan)&gt; セルを縦(横)に伸ばす
+</li>
+
+表示例
+<img class="hyouzirei2" src="table.png" alt="table表示例">
+</ol>
+<h2 id="t6">・フォームタグについて</h2>
+<ol class="ol">
+<li>フォーム全体の指定...
+&lt;form&gt; 入力・送信フォームを作る
+&lt;label&gt;  部品とラベルを関連付ける
+</li>
+<li>フォームの部品...
+&lt;input type="～" name=～ value="～"&gt;nameで部品の名前を、valueで表示内容を決める
+&lt;input type="text"&gt; テキストボックスを作る
+&lt;input type="password"&gt; パスワード形式の入力欄を作る
+&lt;input type="radio"&gt; ラジオボタンを作る
+&lt;input type="checkbox"&gt; チェックボックスを作る
+&lt;input type="hidden"&gt; 隠しデータを送信する
+&lt;textarea&gt; 複数行のテキスト入力欄を作る
+&lt;select&gt;&lt;option&gt; セレクトボックスを作る
+&lt;optgroup&gt; 選択肢をグループ化する
+</li>
+<li>ボタン...
+&lt;input type="reset"&gt; リセットボタンを作る 
+&lt;input type="submit"&gt; 送信ボタンを作る
+&lt;input type="button"&gt; 汎用的なボタンを作る
+&lt;input type="～" maxlength&gt;入力できる文字数を制限する
+
+表示例
+<img src="form.png" alt="form表示例">
+
+</li>
+<li id="t7">その他
+&lt;section&gt; 「章・節・項」などであることを示す
+&lt;article&gt;　独立して完結しているものを示す
+&lt;aside&gt;　メインコンテンツとは関連性が低い補足や広告などを示す
+&lt;nav&gt;　「主要なナビゲーション」に対してのみ使用する。但し、
+        ページ内に1回しか使えないという事ではありません。
+&lt;div&gt;　他に適当なタグが無い場合に使用し、
+        要素をグループ化する役割として使用する。
+
+表示例
+<img class="hyouzirei4" src="article.png" alt="article表示例">
+</li>
+
+
+</ol>
+
+
+
+
+
+
+
+<div class="next-back">
+<a href="2.html" class="btn btn-border-shadow btn-border-shadow--radius back">戻る</a></div>
+</pre>
+</article>
+
+<aside>
+    <div class="widget--sticky">
+        <h2 class="sub-title">目次</h2>
+        <ul class="sub-menu">
+        <li><a href="#t1">タグの種類</a></li>
+        <li><a href="#t2">テキスト・<br>フォントタグ</a></li>
+        <li><a href="#t3">リンクタグ</a></li>
+        <li><a href="#t4">リストタグ</a></li>
+        <li><a href="#t5">イメージタグ</a></li>
+        <li><a href="#t6">フォームタグ</a></li>
+        <li><a href="#t7">その他</a></li>
+        </ul>
+    </div>
+    </aside>
+    </div>
+<footer>
+    <div>
+        <ul>
+            <li><a class="nav-link" href="../../preparation-sub-top/preparatiion.html" >制作準備</a></li>
+            <li><a class="nav-link" href="../create.html" >作り方&nbsp;&nbsp;</a></li>
+            <li><a class="nav-link" href="../../design-sub-top/design.html" >デザイン</a></li>
+          </ul>
+    </div>
+    <div class="copy">
+      <p><small> Copyright &copy; 2021 All Rights Reserved by 僕たちも素人でした</small></p>
+    </div>
+  </footer>
+</body>
+</html>
